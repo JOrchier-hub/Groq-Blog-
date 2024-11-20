@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply text-gray-900 font-bold;
+}
+
+.prose p {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.prose a {
+  @apply text-indigo-600 hover:text-indigo-700 no-underline;
+}
+
+.prose ul, .prose ol {
+  @apply my-6;
+}
